@@ -20,8 +20,8 @@ string Input()
         cout << "Enter an integer: ";
         cin >> x;
         
-        a = (x%2 == 0 && x != 0)? Even++: 0;
-        a = (x%2 != 0 && x != 0)? Odd++: 0;
+        if(x%2 == 0 && x != 0) Even++;
+        if(x%2 != 0 && x != 0) Odd++;
     }
     while(x != 0);
 
